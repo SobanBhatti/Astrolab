@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 4388157408386908222}
   - component: {fileID: 1180567833448651381}
   - component: {fileID: 1976258042083606548}
+  - component: {fileID: -767837805108554555}
   m_Layer: 0
   m_Name: Star
   m_TagString: Untagged
@@ -111,3 +112,19 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &-767837805108554555
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6697622842676188391}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32c81a50a88c98048b7e368ba99e1d58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CelestialBody
+  bodyName: Unnamed Star
+  radius: 1
+  luminosity: 1
+  originalPosition: {x: 0, y: 0, z: 0}

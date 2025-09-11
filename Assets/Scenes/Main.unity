@@ -119,27 +119,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &81177178 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6697622842676188391, guid: 05c32190d0ca3054880c9f1844d5c1d0, type: 3}
-  m_PrefabInstance: {fileID: 3209379412894153952}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &81177183
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 81177178}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 32c81a50a88c98048b7e368ba99e1d58, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::CelestialBody
-  bodyName: Unnamed Star
-  radius: 1
-  luminosity: 1
-  originalPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &1198707666
 GameObject:
   m_ObjectHideFlags: 0
@@ -294,7 +273,7 @@ Transform:
   m_GameObject: {fileID: 1241750934}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalPosition: {x: 0, y: 0, z: -300}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -490,71 +469,58 @@ Transform:
   - {fileID: 1241750935}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &3209379412894153952
-PrefabInstance:
+--- !u!1 &1786603811
+GameObject:
   m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1786603813}
+  - component: {fileID: 1786603812}
+  m_Layer: 0
+  m_Name: StarSystem
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1786603812
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1786603811}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7620083144a77a4408cd8c87ad45259d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::StarLoader
+  jsonFile: {fileID: 4900000, guid: a1f0d837b76f00c40ba77b339293a7e0, type: 3}
+  starPrefab: {fileID: 6697622842676188391, guid: 05c32190d0ca3054880c9f1844d5c1d0, type: 3}
+  positionScale: 1
+--- !u!4 &1786603813
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1786603811}
   serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 1529973509369726583, guid: 05c32190d0ca3054880c9f1844d5c1d0, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1529973509369726583, guid: 05c32190d0ca3054880c9f1844d5c1d0, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1529973509369726583, guid: 05c32190d0ca3054880c9f1844d5c1d0, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1529973509369726583, guid: 05c32190d0ca3054880c9f1844d5c1d0, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1529973509369726583, guid: 05c32190d0ca3054880c9f1844d5c1d0, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1529973509369726583, guid: 05c32190d0ca3054880c9f1844d5c1d0, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1529973509369726583, guid: 05c32190d0ca3054880c9f1844d5c1d0, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1529973509369726583, guid: 05c32190d0ca3054880c9f1844d5c1d0, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1529973509369726583, guid: 05c32190d0ca3054880c9f1844d5c1d0, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1529973509369726583, guid: 05c32190d0ca3054880c9f1844d5c1d0, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6697622842676188391, guid: 05c32190d0ca3054880c9f1844d5c1d0, type: 3}
-      propertyPath: m_Name
-      value: Sphere
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 6697622842676188391, guid: 05c32190d0ca3054880c9f1844d5c1d0, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 81177183}
-  m_SourcePrefab: {fileID: 100100000, guid: 05c32190d0ca3054880c9f1844d5c1d0, type: 3}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 1198707669}
   - {fileID: 1413053457}
-  - {fileID: 3209379412894153952}
   - {fileID: 1392375951}
+  - {fileID: 1786603813}
