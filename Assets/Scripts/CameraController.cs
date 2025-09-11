@@ -55,4 +55,10 @@ public class CameraController : MonoBehaviour
         cameraTransform.position = transform.position - dir * distance;
         cameraTransform.rotation = rot;
     }
+
+    public void ResetView()
+    {
+        rotation = Vector2.zero;
+        distance = 10f; // eller et annet standard zoom-nivå
+    }
 }
